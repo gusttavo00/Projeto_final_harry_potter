@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonserina - Tom Riddle</title>
+    
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/icon/icon-hp.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/icon/icon-hp.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="header-left">
+                <a href="{{ url_for('home') }}" class="logo"><img src="{{ url_for('static', filename='assets/img/logo.png') }}" alt="logo"></a>
+                <p>Sala Comunal de Sonserinos</p>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="{{ url_for('home') }}" class="nav-link" target="_self">Início</a>
+                <a href="{{ url_for('sobre') }}" class="nav-link" target="_self">Sobre</a>
+                <a href="{{ url_for('fundador') }}" class="nav-link" target="_self">Fundador</a>
+                <a href="{{ url_for('integrantes') }}" class="nav-link" target="_self">Integrantes</a>
+                <a href="{{ url_for('jogo_quiz') }}" class="nav-link">Quiz</a>
+                <a href="{{ url_for('jogo_numero') }}" class="nav-link">Enigma</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tom">
+            <div class="section-content">
+                <div class="content-image">
+                    <img src="{{ url_for('static', filename='assets/img/tom.png') }}" alt="Tom Riddle">
+                </div>
+                <div class="content-text">
+                    <h2>Tom Servolo Riddle</h2>
+                    <p>Tom Servolo Riddle <strong>(Lord Voldemort)</strong> Filho de um trouxa e uma bruxa descendente de <strong>Slytherin</strong>, Tom cresceu em um orfanato e logo mostrou talento para magia sombria.</p>
+                    <p>Em Hogwarts, foi Sonserino e descobriu ser herdeiro de <strong>Salazar Slytherin</strong>, abrindo a Câmara Secreta. Obcecado pelo poder e imortalidade, criou Horcruxes para dividir sua alma. Como Voldemort, tornou-se o bruxo das trevas mais temido, mas sua incapacidade de amar o levou à <strong>derrota por Harry Potter.</strong></p>
+                    <a href="{{ url_for('integrantes') }}" class="btn-voltar" target="_self">voltar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sonserina - Mundo Mágico. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

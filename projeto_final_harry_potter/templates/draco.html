@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonserina - Draco Malfoy</title>
+    
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/icon/icon-hp.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/icon/icon-hp.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="header-left">
+                <a href="{{ url_for('home') }}" class="logo"><img src="{{ url_for('static', filename='assets/img/logo.png') }}" alt="logo"></a>
+                <p>Sala Comunal de Sonserinos</p>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="{{ url_for('home') }}" class="nav-link" target="_self">Início</a>
+                <a href="{{ url_for('sobre') }}" class="nav-link" target="_self">Sobre</a>
+                <a href="{{ url_for('fundador') }}" class="nav-link" target="_self">Fundador</a>
+                <a href="{{ url_for('integrantes') }}" class="nav-link" target="_self">Integrantes</a>
+                <a href="{{ url_for('jogo_quiz') }}" class="nav-link">Quiz</a>
+                <a href="{{ url_for('jogo_numero') }}" class="nav-link">Enigma</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="draco">
+            <div class="section-content">
+                <div class="content-image">
+                    <img src="{{ url_for('static', filename='assets/img/draco.png') }}" alt="Draco Malfoy">
+                </div>
+                <div class="content-text">
+                    <h2>Draco Lúcio Malfoy</h2>
+                    <p>Filho único de Lúcio e Narcisa Malfoy, <strong>Draco</strong> foi aluno da Sonserina na mesma época que Harry.</p>
+                    <p>Criado em meio à <strong>riqueza</strong> e ao orgulho pela pureza do sangue, foi arrogante e rival de Harry, mas suas ações refletiam a pressão da família. No sexto ano, foi forçado a tentar matar <strong>Dumbledore.</strong> Depois da guerra, mudou suas atitudes, casou-se com Astoria e teve um filho, mostrando <strong>maturidade.</strong></p>
+                    <a href="{{ url_for('integrantes') }}" class="btn-voltar" target="_self">voltar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sonserina - Mundo Mágico. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

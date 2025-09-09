@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonserina - Sobre</title>
+    
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/icon/icon-hp.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/icon/icon-hp.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+    
+<body>
+
+    <header>
+         <nav class="container">
+            <div class="header-left">
+                <a href="{{ url_for('home') }}" class="logo"><img src="{{ url_for('static', filename='assets/img/logo.png') }}" alt="logo"></a>
+                <p>Sala Comunal de Sonserinos</p>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="{{ url_for('home') }}" class="nav-link" target="_self">Início</a>
+                <a href="{{ url_for('sobre') }}" class="nav-link active" target="_self">Sobre</a>
+                <a href="{{ url_for('fundador') }}" class="nav-link" target="_self">Fundador</a>
+                <a href="{{ url_for('integrantes') }}" class="nav-link" target="_self">Integrantes</a>
+                <a href="{{ url_for('jogo_quiz') }}" class="nav-link">Quiz</a>
+                <a href="{{ url_for('jogo_numero') }}" class="nav-link">Enigma</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="section-content">
+                <div class="content-image">
+                    <img src="{{ url_for('static', filename='assets/img/brasao-sobre.png') }}" alt="Brasão da Casa Sonserina">
+                </div>
+                <div class="content-text">
+                    <h2>Sobre a Casa Sonserina</h2>
+                    <p>Fundada por <strong>Salazar Sonserina</strong>, a casa valoriza ambição, astúcia e determinação. Seu símbolo é a serpente, suas cores são verde e prata, e sua sala comunal fica nas masmorras, sob o Lago Negro.</p>
+                    <p>Embora conhecida por formar grandes bruxos das trevas, como <strong>Voldemort</strong>, a Sonserina também teve nomes respeitáveis, como <strong>Severo Snape e Horácio Slughorn</strong>. A casa não é sinônimo de maldade — mas sim de estratégia, liderança e vontade de vencer.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sonserina - Mundo Mágico. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
