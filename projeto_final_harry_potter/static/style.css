@@ -738,12 +738,6 @@ footer {
         margin-right: 77%;
         text-align: left;
     }
-
-    .animate-on-scroll {
-        opacity: 1;
-        transform: none;
-        animation: none;
-    }
 }
 
 @media (min-width: 1025px) {
