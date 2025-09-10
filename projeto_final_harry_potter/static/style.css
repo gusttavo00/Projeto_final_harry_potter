@@ -431,7 +431,7 @@ footer {
 }
 
 .lufa-lufa-text {
-    color:#ffc200;
+    color: #ffc200;
 }
 
 /* ================================================================================
@@ -583,8 +583,10 @@ footer {
 }
 
 .text-palpite {
-    margin-top: 0; /* Removido o grande espaçamento */
-    text-align: center; /* Centralizado para mobile */
+    margin-top: 0;
+    /* Removido o grande espaçamento */
+    text-align: center;
+    /* Centralizado para mobile */
     width: 100%;
 }
 
@@ -710,9 +712,12 @@ footer {
     }
 
     .btn-tentar-novamete {
-        margin-top: 1.5rem; /* Aumentei um pouco para ter mais espaço no tablet */
-        justify-content: center; /* Centraliza o botão */
-        align-items: center; /* Alinha o conteúdo verticalmente */
+        margin-top: 1.5rem;
+        /* Aumentei um pouco para ter mais espaço no tablet */
+        justify-content: center;
+        /* Centraliza o botão */
+        align-items: center;
+        /* Alinha o conteúdo verticalmente */
     }
 
     .btn-tentar-novamete:hover {
@@ -732,6 +737,12 @@ footer {
         margin-top: 25px;
         margin-right: 77%;
         text-align: left;
+    }
+
+    .animate-on-scroll {
+        opacity: 1;
+        transform: none;
+        animation: none;
     }
 }
 
@@ -815,9 +826,12 @@ footer {
     }
 
     .btn-tentar-novamete {
-        margin-top: 2rem; /* Aumentei um pouco para ter mais espaço no desktop */
-        justify-content: center; /* Centraliza o botão */
-        align-items: center; /* Alinha o conteúdo verticalmente */
+        margin-top: 2rem;
+        /* Aumentei um pouco para ter mais espaço no desktop */
+        justify-content: center;
+        /* Centraliza o botão */
+        align-items: center;
+        /* Alinha o conteúdo verticalmente */
     }
 
     .btn-tentar-novamete:hover {
@@ -831,7 +845,8 @@ footer {
     }
 
     .text-palpite {
-        margin-top: 0;  /* Remove a margem para alinhamento em desktops */
+        margin-top: 0;
+        /* Remove a margem para alinhamento em desktops */
         margin-right: 0;
         text-align: left;
     }
