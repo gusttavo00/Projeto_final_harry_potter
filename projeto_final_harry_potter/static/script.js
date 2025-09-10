@@ -16,11 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'h1, h2, h3, p, .content-image, .content-image img, .btn-voltar, foote, section, .section-content, .integrante, .integrante-card, .btn-voltar, .btn-tentar-novamete'
     );
 
-    // Adiciona a classe que esconde os elementos no início
-    animatedElements.forEach(element => {
-        element.classList.add('animate-on-scroll');
-    });
-
     const observer = new IntersectionObserver(function(entries, observer) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
