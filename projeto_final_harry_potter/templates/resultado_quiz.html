@@ -51,7 +51,8 @@
                     <p>Você foi escolhido para a casa dos <strong>ambiciosos</strong>, astutos e determinados. Os
                         <strong>bruxos</strong> desta casa
                         são conhecidos por sua sede de poder e sua engenhosidade, características de grandes
-                        líderes. Você tem o que é preciso para alcançar a grandeza. <strong>Salve Salazar!</strong> </p>
+                        líderes. Você tem o que é preciso para alcançar a grandeza. <strong>Salve Salazar!</strong>
+                    </p>
                     <p><strong>Mascote:</strong> Cobra</p>
                     <p><strong>Cores:</strong> Verde e Prata</p>
                 </div>
@@ -89,16 +90,18 @@
                     <p><strong class="lufa-lufa-text">Cores:</strong> Amarelo e Preto</p>
                 </div>
                 {% elif resultado == 'Corvinal' %}
-                <div class="result-card ravenclaw">
-                    <img src="{{ url_for('static', filename='assets/img/brasao-corvinal.png') }}" alt="Corvinal">
-                    <h3>Bem-vindo à Corvinal!</h3>
-                    <p>O Chapéu Seletor se curvou diante de sua <strong>inteligência,</strong> sabedoria e
-                        criatividade. Você pertence à casa de <strong>Rowena Corvinal,</strong> onde o conhecimento
+                <div class="content-text">
+                    <div class="content-image-quiz">
+                        <img src="{{ url_for('static', filename='assets/img/brasao-corvinal.png') }}" alt="Corvinal">
+                    </div>
+                    <h1>Bem-vindo à <strong class="corvinal-text">Corvinal!</strong></h1>
+                    <p>O Chapéu Seletor se curvou diante de sua <strong class="corvinal-text">inteligência,</strong> sabedoria e
+                        criatividade. Você pertence à casa de <strong class="corvinal-text">Rowena Corvinal,</strong> onde o conhecimento
                         é a maior das virtudes. Os bruxos desta casa buscam a verdade em todas as formas, sempre
-                        prontos para desvendar os <strong>mistérios do mundo.</strong> A curiosidade é sua maior
+                        prontos para desvendar os <strong class="corvinal-text">mistérios do mundo.</strong> A curiosidade é sua maior
                         força.</p>
-                    <p><strong>Mascote:</strong> Águia</p>
-                    <p><strong>Cores:</strong> Azul e Bronze</p>
+                    <p><strong class="corvinal-text">Mascote:</strong> Águia</p>
+                    <p><strong class="corvinal-text">Cores:</strong> Azul e Bronze</p>
                 </div>
                 {% else %}
                 <div class="result-card msg-card error">
@@ -117,5 +120,11 @@
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
+
+</html>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
 
 </html>
